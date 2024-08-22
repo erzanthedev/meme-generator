@@ -2,3 +2,19 @@ body {
   margin: 0;
   background: linear-gradient(to left, #9796f0, #fbc7d4);
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 7px rgb(0 0 0 / 0.3);
+  width: 550px;
+  height: 550px;
+}
