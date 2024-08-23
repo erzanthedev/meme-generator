@@ -6,6 +6,8 @@ export default function MainContent() {
     bottomText: "",
     randomImage: "https://i.imgflip.com/2xscjb.png",
   });
+  const { topText, bottomText, randomImage } = memeData;
+
   const [allMemes, setAllMemes] = useState([]);
 
   useEffect(() => {
@@ -55,7 +57,7 @@ export default function MainContent() {
             id={id + "-topText"}
             onChange={handleChange}
             name="topText"
-            value={memeData.topText}
+            value={topText}
           />
         </div>
         <div className="form-input-wrapper">
@@ -68,7 +70,7 @@ export default function MainContent() {
             id={id + "-bottomText"}
             onChange={handleChange}
             name="bottomText"
-            value={memeData.bottomText}
+            value={bottomText}
           />
         </div>
         <button className="form-btn" onClick={handleRandomMeme}>
@@ -76,13 +78,9 @@ export default function MainContent() {
         </button>
       </div>
       <div className="meme-container">
-        <img
-          className="meme-image"
-          src={memeData.randomImage}
-          alt="sampleMeme"
-        />
-        <h2 className="meme-text top">{memeData.topText}</h2>
-        <h2 className="meme-text bottom">{memeData.bottomText}</h2>
+        <img className="meme-image" src={randomImage} alt="sampleMeme" />
+        <h2 className="meme-text top">{topText}</h2>
+        <h2 className="meme-text bottom">{bottomText}</h2>
       </div>
     </main>
   );
