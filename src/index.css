@@ -21,7 +21,6 @@ body {
 
 /* Header */
 nav {
-  border: 1px solid black;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   display: flex;
   align-items: center;
