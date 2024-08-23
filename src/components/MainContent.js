@@ -12,9 +12,10 @@ export default function MainContent() {
   const id = useId();
 
   function handleChange(event) {
+    const { name, value } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [event.target.name]: event.target.value,
+      [name]: value,
     }));
   }
 
