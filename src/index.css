@@ -83,5 +83,9 @@ main {
 }
 
 .form-btn {
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #ffffff;
   grid-column: 1 / -1;
 }
