@@ -51,7 +51,7 @@ nav {
   font-weight: 500;
 }
 
-/* MainContent */
+/* MainContent - Forms */
 main {
   padding: 28px 37px;
 }
@@ -96,4 +96,51 @@ main {
 
 .form-btn:active {
   transform: translateY(1px);
+}
+
+/* MainContent - Meme */
+.meme-container {
+  width: 477px;
+  height: 268px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.meme-image {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.meme-text {
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 16px 0;
+  font-family: Anton, sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 39.03px;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }

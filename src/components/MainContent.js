@@ -1,4 +1,5 @@
 import { useId } from "react";
+import sampleMeme from "../assets/sample-meme.png";
 
 export default function MainContent() {
   const id = useId();
@@ -19,6 +20,11 @@ export default function MainContent() {
         </div>
         <button className="form-btn">Get a new meme image 🖼</button>
       </form>
+      <div className="meme-container">
+        <img className="meme-image" src={sampleMeme} alt="sampleMeme" />
+        <h2 className="meme-text top">Shut up</h2>
+        <h2 className="meme-text bottom">and take my money</h2>
+      </div>
     </main>
   );
 }
