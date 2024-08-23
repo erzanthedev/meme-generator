@@ -52,8 +52,8 @@ export default function MainContent() {
       </form>
       <div className="meme-container">
         <img className="meme-image" src={sampleMeme} alt="sampleMeme" />
-        <h2 className="meme-text top">Shut up</h2>
-        <h2 className="meme-text bottom">and take my money</h2>
+        <h2 className="meme-text top">{formData.topText}</h2>
+        <h2 className="meme-text bottom">{formData.bottomText}</h2>
       </div>
     </main>
   );
