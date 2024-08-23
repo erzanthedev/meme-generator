@@ -6,12 +6,16 @@ export default function MainContent() {
     <main>
       <form className="form">
         <div className="form-input-wrapper">
-          <label htmlFor={id + "-topText"}>Top Text</label>
-          <input type="text" id={id + "-topText"} />
+          <label className="form-label" htmlFor={id + "-topText"}>
+            Top Text
+          </label>
+          <input className="form-inputs" type="text" id={id + "-topText"} />
         </div>
         <div className="form-input-wrapper">
-          <label htmlFor={id + "-bottomText"}>Bottom Text</label>
-          <input type="text" id={id + "-bottomText"} />
+          <label className="form-label" htmlFor={id + "-bottomText"}>
+            Bottom Text
+          </label>
+          <input className="form-inputs" type="text" id={id + "-bottomText"} />
         </div>
         <button className="form-btn">Get a new meme image 🖼</button>
       </form>
