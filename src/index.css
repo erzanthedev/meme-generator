@@ -89,3 +89,11 @@ main {
   color: #ffffff;
   grid-column: 1 / -1;
 }
+
+.form-btn:hover {
+  filter: brightness(90%);
+}
+
+.form-btn:active {
+  transform: translateY(1px);
+}
