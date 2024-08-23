@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: linear-gradient(to left, #9796f0, #fbc7d4);
+  font-family: Karla, sans-serif;
 }
 
 #root {
@@ -12,9 +13,41 @@ body {
 
 .App {
   background-color: #ffffff;
-  border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0 10px 7px rgb(0 0 0 / 0.3);
   width: 550px;
   height: 550px;
+}
+
+/* Header */
+nav {
+  border: 1px solid black;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  display: flex;
+  align-items: center;
+  padding: 20px 29px;
+}
+
+.header-logo {
+  width: 31.31px;
+  height: 26.22px;
+  margin-right: 7px;
+}
+
+.header-title,
+.header-text {
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-title {
+  font-size: 20.75px;
+  letter-spacing: -0.1em;
+  margin-right: auto;
+}
+
+.header-text {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
 }
