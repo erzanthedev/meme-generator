@@ -1,8 +1,23 @@
-import { useId } from "react";
+import { useId, useState } from "react";
 import sampleMeme from "../assets/sample-meme.png";
 
 export default function MainContent() {
+  const [formData, setFormData] = useState({
+    topText: "",
+    bottomText: "",
+  });
+
+  console.log(formData);
+
   const id = useId();
+
+  function handleChange(event) {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [event.target.name]: event.target.value,
+    }));
+  }
+
   return (
     <main>
       <form className="form">
@@ -10,13 +25,27 @@ export default function MainContent() {
           <label className="form-label" htmlFor={id + "-topText"}>
             Top Text
           </label>
-          <input className="form-inputs" type="text" id={id + "-topText"} />
+          <input
+            className="form-inputs"
+            type="text"
+            id={id + "-topText"}
+            onChange={handleChange}
+            name="topText"
+            value={formData.topText}
+          />
         </div>
         <div className="form-input-wrapper">
           <label className="form-label" htmlFor={id + "-bottomText"}>
             Bottom Text
           </label>
-          <input className="form-inputs" type="text" id={id + "-bottomText"} />
+          <input
+            className="form-inputs"
+            type="text"
+            id={id + "-bottomText"}
+            onChange={handleChange}
+            name="bottomText"
+            value={formData.bottomText}
+          />
         </div>
         <button className="form-btn">Get a new meme image 🖼</button>
       </form>
